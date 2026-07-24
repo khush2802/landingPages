@@ -1,0 +1,405 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+}
+
+.hero{
+     width: 100%;
+     height: 100vh;
+
+     background-image: url("https://sheriyans-task.vercel.app/img/WhatsApp%20Image%202025-07-09%20at%2019.42.34.jpeg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column;
+}
+
+nav{
+     width: 100%;
+     padding: 25px 0;
+}
+
+nav ul{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+
+     list-style: none;
+}
+
+nav ul li a{
+     text-decoration: none;
+     color: aliceblue;
+     font-size: 1.2rem;
+     font-weight: 800;
+}
+
+
+.hero-content{
+     flex:1;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     padding-top: 150px;
+}
+
+.hero-content h1{
+     color: aliceblue;
+     font-size: 4rem;
+     font-weight: 200;
+     letter-spacing: 3px;
+}
+
+.about{
+     width: 100%;
+     min-height: 75vh;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(255, 255, 255);
+}
+
+.about-content{
+     width: 40%;
+     text-align: center;
+}
+
+.about-content h2{
+     font-size: 3rem;
+     font-weight: 800;
+     margin-bottom: 15px;
+}
+
+
+.about-content p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 90px;
+}
+
+.about-content a{
+    text-decoration: none;
+    color: black;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.products{
+     width: 100%;
+     padding: 60px 8% 80px;
+     /* background-color: aqua; */
+     text-align: center;
+}
+
+.products hr{
+     width: 85%;
+      margin:0 auto 70px;
+    border:4px solid gray;
+}
+
+.products h2{
+     font-size: 2rem;
+     margin-bottom: 60px;
+}
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    margin-bottom:80px;
+}
+
+.product-card{
+    text-align:center;
+}
+
+.product-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    font-size:1.5rem;
+    font-weight:400;
+    margin-top:15px;
+}
+
+.product-card p{
+    font-size:1.6rem;
+    margin-top:5px;
+}
+
+.products button{
+    padding:15px 35px;
+    font-size:1.3rem;
+    background:white;
+    border:2px solid black;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.products button:hover{
+    background:black;
+    color:white;
+}
+.newsletter{
+    width:100%;
+    padding:70px 8% 120px;
+    text-align:center;
+}
+
+.newsletter hr{
+    width:85%;
+    margin:0 auto 80px;
+    border:2px solid gray;
+}
+
+.newsletter h2{
+    font-size:2rem;
+    font-weight:400;
+    margin-bottom:30px;
+}
+
+.newsletter form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+
+.newsletter input{
+    width:45%;
+    height:70px;
+    padding:15px;
+    font-size:1.2rem;
+    outline:none;
+}
+
+.newsletter button{
+    height:70px;
+    padding:0 30px;
+    font-size:1.2rem;
+    cursor:pointer;
+    background:#f3f3f3;
+    border:1px solid gray;
+}
+
+.newsletter button:hover{
+    background:black;
+    color:white;
+}
+
+footer{
+    width:100%;
+    background:#02191d;
+    padding:80px 8%;
+}
+
+.footer-links{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links ul li{
+    margin-bottom:18px;
+}
+
+.footer-links ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:1.7rem;
+}
+
+
+
+@media (max-width:992px){
+
+    nav ul{
+        gap:35px;
+    }
+
+    .hero{
+        height:80vh;
+    }
+
+    .hero-content{
+        padding-top:100px;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+        text-align:center;
+    }
+
+    .about{
+        padding:70px 20px;
+    }
+
+    .about-content{
+        width:75%;
+    }
+
+    .about-content h2{
+        font-size:2.5rem;
+    }
+
+    .about-content p{
+        font-size:1.1rem;
+        margin-bottom:60px;
+    }
+
+    .about-content a{
+        font-size:1.5rem;
+    }
+
+    .product-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+    .product-card img{
+        height:350px;
+    }
+
+    .newsletter input{
+        width:60%;
+    }
+
+    .footer-links{
+        gap:40px;
+    }
+
+    .footer-links ul li a{
+        font-size:1.2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    nav{
+        padding:20px;
+    }
+
+    nav ul{
+        gap:25px;
+    }
+
+    nav ul li a{
+        font-size:1rem;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero-content{
+        padding-top:70px;
+        align-items:center;
+    }
+
+    .hero-content h1{
+        font-size:2.3rem;
+        text-align:center;
+        letter-spacing:2px;
+    }
+
+    .about{
+        min-height:auto;
+        padding:60px 20px;
+    }
+
+    .about-content{
+        width:95%;
+    }
+
+    .about-content h2{
+        font-size:2rem;
+    }
+
+    .about-content p{
+        font-size:1rem;
+        margin-bottom:40px;
+    }
+
+    .about-content a{
+        font-size:1.3rem;
+    }
+
+    .products{
+        padding:50px 20px;
+    }
+
+    .products h2{
+        font-size:1.8rem;
+    }
+
+    .product-container{
+        grid-template-columns:1fr;
+    }
+
+    .product-card img{
+        height:350px;
+    }
+
+    .product-card h3{
+        font-size:1.2rem;
+    }
+
+    .product-card p{
+        font-size:1.2rem;
+    }
+
+    .products button{
+        width:160px;
+    }
+
+    .newsletter{
+        padding:60px 20px;
+    }
+
+    .newsletter h2{
+        font-size:1.6rem;
+    }
+
+    .newsletter form{
+        flex-direction:column;
+    }
+
+    .newsletter input{
+        width:100%;
+    }
+
+    .newsletter button{
+        width:100%;
+    }
+
+    footer{
+        padding:60px 20px;
+    }
+
+    .footer-links{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:40px;
+    }
+
+    .footer-links ul li a{
+        font-size:1.1rem;
+    }
+
+}
