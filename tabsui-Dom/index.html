@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tabs</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Tabs UI</h1>
+        <p>Click any tab to see the content.</p>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('about', this)">About</button>
+            <button class="tab" onclick="showTab('projects', this)">Projects</button>
+            <button class="tab" onclick="showTab('contact', this)">Contact</button>
+        </div>
+
+        <div class="content">
+
+            <div id="about" class="tab-content">
+                <h2>About Me</h2>
+                <p>Hello! I am a Full Stack Developer.</p>
+                <p>I enjoy creating websites using HTML, CSS, JavaScript and React.</p>
+            </div>
+
+            <div id="projects" class="tab-content" style="display:none;">
+                <h2>Projects</h2>
+
+                <ul>
+                    <li>Portfolio Website</li>
+                    <li>Weather App</li>
+                    <li>Todo App</li>
+                </ul>
+            </div>
+
+            <div id="contact" class="tab-content" style="display:none;">
+                <h2>Contact</h2>
+
+                <p>Email : KM@gmail.com</p>
+                <p>Phone : +91 9834983247</p>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

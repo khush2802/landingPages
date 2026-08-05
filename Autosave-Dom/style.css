@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #121212;
+    color: rgb(183, 183, 183);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1500px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #1642a1;
+}
+
+h1{
+    text-align: center;
+    color: #114584;
+    margin-bottom: 15px;
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #124b91;
+}
+
+#status{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button{
+    flex: 1;
+    padding: 12px;
+    background-color: #2563eb;
+    color: rgb(189, 188, 188);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+hr{
+    margin: 30px 0;
+    border: 1px solid #444;
+}
+
+/* Profile Cards */
+
+#profileContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.card{
+    background-color: #2a2a2a;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card h3{
+    text-align: center;
+    color: #124685;
+    margin-bottom: 15px;
+}
+
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.card strong{
+    color: #ffffff;
+}
+
+.card .buttons{
+    margin-top: 20px;
+}
+
+.card button:first-child{
+    background-color: #133b8f;
+}
+
+.card button:last-child{
+    background-color: #911313;
+}

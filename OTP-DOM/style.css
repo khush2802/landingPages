@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111827;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+p{
+    color:lightgray;
+}
+
+.card{
+    width:350px;
+    background:#1f2937;
+    padding:25px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.card h2{
+    margin-bottom:20px;
+}
+
+.card input[type="text"]{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:5px;
+    background:#374151;
+    color:white;
+}
+
+.otp-box{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.otp-box input{
+    width:45px;
+    height:45px;
+    text-align:center;
+    font-size:20px;
+    border:none;
+    border-radius:5px;
+    background:#374151;
+    color:white;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+button:disabled{
+    background:gray;
+    cursor:not-allowed;
+}
+
+#message{
+    margin-top:15px;
+    color:yellow;
+}

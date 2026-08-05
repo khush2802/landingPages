@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#e5e7eb;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#061e46;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#94a3b8;
+}
+
+/* Main */
+
+main{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:25px;
+}
+
+/* Cards */
+
+.card{
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#0b3870;
+    margin-bottom:20px;
+}
+
+/* Inputs */
+
+label{
+    display:block;
+    margin:12px 0 6px;
+    color:#cbd5e1;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #475569;
+    border-radius:6px;
+    background:#334155;
+    color:#f8fafc;
+    outline:none;
+}
+
+input::placeholder{
+    color:#94a3b8;
+}
+
+/* Buttons */
+
+button{
+    width:100%;
+    margin-top:18px;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background:#0a2b72;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+/* Summary */
+
+.summary p{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    color:#cbd5e1;
+}
+
+/* Right Buttons */
+
+.top-buttons{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.top-buttons button{
+    flex:1;
+}
+
+/* Expense Container */
+
+.expense-container{
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:10px;
+    padding:20px;
+}
+
+.expense-container h2{
+    color:#0a3365;
+    margin-bottom:20px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#0d2251;
+    color:white;
+    padding:14px;
+}
+
+td{
+    padding:14px;
+    border-bottom:1px solid #334155;
+    color:#e2e8f0;
+}
+
+/* Zebra Rows */
+
+tbody tr:nth-child(even){
+    background:#263447;
+}
+
+/* Delete Button */
+
+.delete-btn{
+    background:#910808;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Empty State */
+
+.empty{
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+}
+
+.empty i{
+    font-size:45px;
+    margin-bottom:10px;
+    color:#3b82f6;
+}
+
+.hidden{
+    display:none;
+}
