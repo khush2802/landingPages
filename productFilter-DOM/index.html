@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Filter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>Product Filter</h1>
+
+        <p>Search products by name or category.</p>
+
+    </header>
+
+    <main class="wrapper">
+
+        <!-- Search Section -->
+
+        <section class="sidebar">
+
+            <div class="card">
+
+                <h2>Search Product</h2>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search here..."
+                >
+
+                <p class="info">
+                    Search by product name or category.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Products Section -->
+
+        <section class="products">
+
+            <div class="top">
+
+                <h2>Products</h2>
+
+                <span id="productCount">
+                    0 Products
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div id="productList">
+
+            </div>
+
+            <div id="emptyMessage">
+
+                <h3>No Product Found</h3>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

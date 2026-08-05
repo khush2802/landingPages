@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#1b1b1b;
+    color:#f5f5f5;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:30px auto;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+header h1{
+    color:#f97316;
+    margin-bottom:8px;
+}
+
+header p{
+    color:#cfcfcf;
+}
+
+/* Main Layout */
+
+.wrapper{
+    display:grid;
+    grid-template-columns:330px 1fr;
+    gap:20px;
+    align-items:start;
+}
+
+/* Cards */
+
+.card,
+.bookmark-card{
+    background:#2a2a2a;
+    border:1px solid #444;
+    border-radius:10px;
+    padding:20px;
+}
+
+/* Left Card */
+
+.card h2{
+    color:#fb923c;
+    margin-bottom:20px;
+}
+
+.card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    background:#3a3a3a;
+    color:white;
+    border:1px solid #555;
+    border-radius:6px;
+    outline:none;
+    font-size:15px;
+}
+
+.card input::placeholder{
+    color:#bdbdbd;
+}
+
+.card button{
+    width:100%;
+    padding:12px;
+    background:#f97316;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+/* Right Card */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.top h2{
+    color:#fb923c;
+}
+
+.top span{
+    color:#bdbdbd;
+    font-size:14px;
+}
+
+.bookmark-card hr{
+    border:1px solid #444;
+    margin-bottom:15px;
+}
+
+/* Bookmark List */
+
+#bookmarkList{
+    list-style:none;
+}
+
+#bookmarkList li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#383838;
+    border-radius:8px;
+    padding:15px;
+    margin-bottom:12px;
+}
+
+.bookmark-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.bookmark-info h3{
+    font-size:17px;
+    color:white;
+}
+
+.bookmark-info a{
+    color:#fdba74;
+    text-decoration:none;
+    margin-top:5px;
+    word-break:break-word;
+}
+
+/* Buttons */
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.visitBtn{
+    background:#f97316;
+    color:white;
+    border:none;
+    padding:9px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.deleteBtn{
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:9px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Empty State */
+
+#emptyMessage{
+    text-align:center;
+    color:#bdbdbd;
+    padding:40px;
+}
+

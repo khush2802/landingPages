@@ -1,31 +1,42 @@
-const button = document.getElementById("btn");
+const sendBtn = document.getElementById("sendBtn");
+const countdown = document.getElementById("countdown");
 const message = document.getElementById("message");
+const timerBox = document.getElementById("timerBox");
 
-button.addEventListener("click", startTimer);
+let timer;
+let timeLeft = 30;
 
-function startTimer(){
+sendBtn.addEventListener("click", sendOTP);
 
-    button.disabled = true;
+function sendOTP(){
 
-    let time = 30;
+    sendBtn.disabled = true;
 
-    button.innerText = "Resend OTP in 30s";
+    timerBox.style.display = "block";
 
-    const timer = setInterval(function(){
+    message.innerHTML = "OTP Sent Successfully!";
 
-        time--;
+    timeLeft = 30;
 
-        button.innerText = `Resend OTP in ${time}s`;
+    countdown.innerHTML = timeLeft;
 
-        if(time === 0){
+    clearInterval(timer);
+
+    timer = setInterval(function(){
+
+        timeLeft--;
+
+        countdown.innerHTML = timeLeft;
+
+        if(timeLeft <= 0){
 
             clearInterval(timer);
 
-            button.disabled = false;
+            sendBtn.disabled = false;
 
-            button.innerText = "Send OTP";
+            message.innerHTML = "OTP Expired! You can request a new OTP.";
 
-            message.innerText = "You can request a new OTP.";
+            timerBox.style.display = "none";
 
         }
 

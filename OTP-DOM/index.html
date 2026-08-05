@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTP Timer</title>
+    <title>OTP Verification</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <div class="container">
 
-    <h1>OTP Timer</h1>
-    <p>Click the button to send OTP.</p>
-
     <div class="card">
 
-        <h2>Verify Mobile Number</h2>
+        <h1>OTP Verification</h1>
 
-        <input type="text" placeholder="+91 9876543210" readonly>
+        <p>Click the button below to receive your One-Time Password.</p>
 
-        <div class="otp-box">
-            <input maxlength="1">
-            <input maxlength="1">
-            <input maxlength="1">
-            <input maxlength="1">
-            <input maxlength="1">
-            <input maxlength="1">
+        <input
+            type="text"
+            placeholder="Enter Mobile Number"
+            id="mobile"
+        >
+
+        <button id="sendBtn">
+            Send OTP
+        </button>
+
+        <div id="timerBox" class="timer">
+
+            OTP expires in
+
+            <span id="countdown">
+                30
+            </span>
+
+            seconds
+
         </div>
 
-        <button id="btn">Send OTP</button>
+        <div class="status">
 
-        <p id="message"></p>
+            <p id="message"></p>
+
+        </div>
 
     </div>
 

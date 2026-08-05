@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>Bookmark Manager</h1>
+
+        <p>Save and manage your favourite websites.</p>
+
+    </header>
+
+    <main class="wrapper">
+
+        <!-- Left Side -->
+
+        <section class="card">
+
+            <h2>Add Bookmark</h2>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Website Title"
+            >
+
+            <input
+                type="text"
+                id="url"
+                placeholder="https://example.com"
+            >
+
+            <button id="saveBtn">
+                Save Bookmark
+            </button>
+
+        </section>
+
+        <!-- Right Side -->
+
+        <section class="bookmark-card">
+
+            <div class="top">
+
+                <h2>Saved Bookmarks</h2>
+
+                <span id="count">0 Bookmarks</span>
+
+            </div>
+
+            <hr>
+
+            <ul id="bookmarkList">
+
+            </ul>
+
+            <div id="emptyMessage">
+
+                <p>No Bookmarks Added</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
